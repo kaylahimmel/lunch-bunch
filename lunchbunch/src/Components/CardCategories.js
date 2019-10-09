@@ -1,13 +1,9 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-const CardCategories = (props) => {
+function CardCategories (props) {
   return (
-    <div className="card-restaurantCategories">
-      <h6>
-        {props.restaurantCategories}
-      </h6>
-    </div>
-  );
+    <h6>{props.categories}</h6>
+  )
 };
 
 export default CardCategories;

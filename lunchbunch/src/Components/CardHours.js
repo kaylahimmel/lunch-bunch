@@ -1,13 +1,11 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-const CardHours = (props) => {
+function CardHours (props) {
   return (
-    <div className="card-restaurantHours">
-      <h5>
-        {props.restaurantHours}
-      </h5>
-    </div>
-  );
+    <h5>
+      {props.hours}
+    </h5>
+  )
 };
 
 export default CardHours;

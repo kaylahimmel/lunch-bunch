@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 
-const CardHeader = (props) => {
+function CardTitle (props) {
   return (
     <div className="card-restaurant">
-      <h1>
-        {props.restaurantName}
+      <h1 class="card-title">
+        {props.title}
       </h1>
     </div>
   );
 };
 
-export default CardHeader;
+export default CardTitle;
