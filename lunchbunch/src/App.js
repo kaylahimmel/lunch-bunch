@@ -5,18 +5,18 @@ import Footer from '../src/Components/Footer';
 
 import './App.css';
 
-function App() {
-  return (
-    <div>
-      <Header />
-      <div className="page-container__card-view">
-        <Card />
-        <Card />
-        <Card />
+class App extends React.Component {
+  render() {
+    return (
+      <div>
+        <Header />
+        <div className="page-container__card-view">
+          <Card />
+        </div>
+        <Footer />
       </div>
-      <Footer />
-    </div>
-  );
+    );
+  }
 }
 
 export default App;

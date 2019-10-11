@@ -1,23 +1,31 @@
 import React, { Component } from 'react';
-import CardHeader from '../Components/CardTitle';
 import CardTitle from '../Components/CardTitle';
 import CardAddress from '../Components/CardAddress';
 import CardHours from '../Components/CardHours';
-import CardCategories from '../Components/CardCategories';
+import CardDescription from '../Components/CardDescription';
+import restaurantData from '../restaurantData';
 
 
 function Card () {
+  const restaurantComponents = restaurantData.map(restaurant => {
+    return (
+      <div  key={restaurant.id} className="card">
+        <CardTitle title={restaurant.title} />
+        <CardAddress address={restaurant.address} />
+        <h4>
+          Distance from Office
+        </h4>
+        <CardHours hours={restaurant.hours} />
+        <CardDescription description={restaurant.description} />
+      </div>
+    )
+  })
+
   return (
-    <div className="card">
-      <CardHeader />
-      <CardTitle title="Restaurant name here" />
-      <CardAddress address="Address here" />
-      <h4>
-        Distance from Office
-      </h4>
-      <CardHours hours="hours here" />
-      <CardCategories categories="categories here" />
+    <div>
+      {restaurantComponents}
     </div>
+  
   )
 }
 

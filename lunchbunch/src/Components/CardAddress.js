@@ -2,7 +2,7 @@ import React from 'react';
 
 function CardAddress (props) {
   return (
-    <h4>{props.address}</h4>
+    <h4 style={{display: !props.address && "none"}} className="card-address">{props.address}</h4>
   )
 };
 
