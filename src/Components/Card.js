@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import CardTitle from '../Components/CardTitle';
-import CardAddress from '../Components/CardAddress';
-import CardHours from '../Components/CardHours';
-import CardDescription from '../Components/CardDescription';
+import CardTitle from './CardTitle';
+import CardAddress from './CardAddress';
+import CardHours from './CardHours';
+import CardDescription from './CardDescription';
 import restaurantData from '../restaurantData';
 
 
