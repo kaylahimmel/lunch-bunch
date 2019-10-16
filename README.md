@@ -1,3 +1,2 @@
-# LunchBunch
-
-Easily decide where your group should go to lunch.
+## LunchBunch
+Choose your group's next lunch destination.
