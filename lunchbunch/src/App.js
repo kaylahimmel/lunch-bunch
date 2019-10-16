@@ -5,6 +5,8 @@ import Footer from '../src/Components/Footer';
 
 import './App.css';
 
+require('dotenv').config()
+
 class App extends React.Component {
   render() {
     return (
